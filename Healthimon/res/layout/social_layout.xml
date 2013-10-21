@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+     <LinearLayout 
+    android:orientation="horizontal"
+    android:id="@+id/topbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    >   
+	    <TextView 
+			android:id="@+id/textview"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="#000000"
+			android:textSize="16sp"
+			android:text="Share Comments"
+			android:textStyle="bold"
+		/>
+	</LinearLayout>
+	<View
+        android:id="@+id/view01"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/topbar"
+        android:background="#313437" />      
+     <TextView 
+		android:id="@+id/text"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="16sp"
+		android:text="Connect any provider and Share Update."
+		android:textStyle="bold"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="20dp"
+		android:textColor="#000000"
+		android:layout_below="@+id/view01"
+	/>
+    <TextView 
+		android:id="@+id/dialogTitle"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:textColor="#000000"
+		android:textSize="14sp"
+		android:text="Share Update"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:textStyle="bold"
+		android:layout_below="@+id/text"	
+	/>  
+	<EditText 
+	    android:id="@+id/editTxt"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:textColor="#000000"
+		android:textSize="14sp"
+		android:layout_margin="5dp"
+		android:hint="Enter Message"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_below="@+id/dialogTitle"
+	/>
+    
+	<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    >
+     
+</RelativeLayout>
+
+	<Button
+	    android:id="@+id/sharebutton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/update"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:layout_margin="20dp"
+	    android:text="Share"
+	    android:textColor="#cc0000" />
+
+	<Button
+	    android:id="@+id/update"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/editTxt"
+	    android:layout_toLeftOf="@+id/cancel"
+	    android:padding="5dp"
+	    android:text="Update"
+	    android:textColor="#669900"
+	    android:textSize="14sp" />
+
+	<Button
+	    android:id="@+id/cancel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/sharebutton"
+	    android:layout_alignRight="@+id/dialogTitle"
+	    android:text="Cancel"
+	    android:textSize="14sp"
+	    android:onClick="cancelText" />
+
+</RelativeLayout>
